@@ -1,4 +1,4 @@
-name: Test, Build, amd Deploy | Modul 01 - Lab2.2 Senior Project
+name: Test, Build, and Deploy | Modul 01 - Lab2.2 Senior Project
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Testing Build pre-Deploy
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version}}
-          cache: "npm"
+           node-version: ${{ matrix.node-version}}
+           cache: "npm"
         - run: npm i
         - run: npm run build
