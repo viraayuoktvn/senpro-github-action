@@ -40,7 +40,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             eval "$(ssh-agent -s)"
-            ssh-add ~/.ssh/senpro-ssh
+            ssh-add ~/.ssh/senpro-ssh-rev-23
             cd ~/senpro/460570/modul01/senpro-github-action
             git restore .
             git pull origin main
